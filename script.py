@@ -90,6 +90,7 @@ def ReleaseKey(hexKeyCode):
                             dwFlags=KEYEVENTF_KEYUP))
     user32.SendInput(1, ctypes.byref(x), ctypes.sizeof(x))
 
+# play around with the timings, it may not be perfect
 if __name__ == "__main__":
     i = 0
     #  number of jumps
